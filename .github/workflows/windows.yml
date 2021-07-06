@@ -1,0 +1,16 @@
+name: Windows-CRD
+
+on: 
+  workflow_dispatch:
+  
+jobs:
+  build-iso:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: powershell
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Initializing Setup
+      run: echo "this is test"

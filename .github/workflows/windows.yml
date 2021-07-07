@@ -12,5 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Initializing Setup
-      run: echo "this is test"
+    - name: Install winget
+      run: |
+           Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/pratyakshm/CleanWin/main/files/InstallWinGet.ps1'))
+           winget install git -h

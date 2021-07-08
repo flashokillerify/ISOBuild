@@ -19,4 +19,4 @@ jobs:
            $currentdir = $(Get-Location).Path
            $dir = "$currentdir\win-x64\CLI"
            Set-Location $dir
-           .\UUPDownload.exe -s Professional -v 10.0.19043.1081 -r Retail -c vb_release -t amd64 -l en-US
+           .\UUPDownload.exe -s Professional -v 10.0.22000.65 -r External -b Dev -c co_release -t amd64 -l en-US
